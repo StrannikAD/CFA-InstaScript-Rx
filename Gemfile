@@ -16,6 +16,9 @@ gem 'puma', '~> 3.0'
 gem 'sass-rails', '~> 5.0'
 gem 'bootstrap-sass'
 gem "font-awesome-rails"
+gem "paperclip", "~> 5.0.0"
+gem 'activeadmin', github: 'activeadmin'
+gem 'devise'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
