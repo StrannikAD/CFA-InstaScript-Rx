@@ -4,5 +4,6 @@ Rails.application.routes.draw do
   root 'pages#index'
   get 'shop' => 'pages#shop'
 
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  resources :carts
+  resources :product_items
 end
