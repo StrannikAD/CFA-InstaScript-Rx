@@ -20,6 +20,9 @@ gem "paperclip", "~> 5.0.0"
 gem 'activeadmin', github: 'activeadmin'
 gem 'devise'
 gem 'toastr-rails'
+gem "figaro"
+gem "braintree", "~> 2.74.0"
+
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views

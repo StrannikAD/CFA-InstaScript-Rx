@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   ActiveAdmin.routes(self)
   root 'pages#index'
   get 'shop' => 'pages#shop'
-
+  
   resources :carts
   resources :product_items
   resources :orders
