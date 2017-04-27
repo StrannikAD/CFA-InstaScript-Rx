@@ -20,4 +20,8 @@ class Product < ApplicationRecord
     end
   end
 
+  def self.latest
+    Product.order(:updated_at).last
+  end
+
 end
