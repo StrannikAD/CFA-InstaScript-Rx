@@ -88,9 +88,9 @@ Rails.application.configure do
   config.action_mailer.delivery_method = :test
   
   # Devise config
-  config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
-  
-   Braintree::Configuration.environment = :sandbox
+  config.action_mailer.default_url_options = { host: 'https://instascriptrx.herokuapp.com/', port: 3000 }
+
+  Braintree::Configuration.environment = :sandbox
   Braintree::Configuration.merchant_id = ENV['merchant_id']
   Braintree::Configuration.public_key = ENV['public_key']
   Braintree::Configuration.private_key = ENV['private_key']
