@@ -169,7 +169,7 @@ header.secondary.small .parallax-background {
 body {
   font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
-  color: #8d8d8d;
+  color: #323237;
   font-size: 18px;
   line-height: 28px;
   font-weight: 500;
@@ -1294,7 +1294,7 @@ section.newsletter input {
   border: none;
   margin-bottom: 0;
   height: 43px;
-  color: #8D8D8D;
+  color: #323237;
 }
 
 section.newsletter h2.page-title {
