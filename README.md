@@ -39,7 +39,7 @@ I chose to pitch to Barack Obama as my aim was to tackle the issue of healthcare
 ## Solution
 
 - A delivery service which would pick up and drop off prescription medication.
--- The delivery service would pick up the prescription from the customer, take it to the chemist, and then deliver the medication back to the customer.
+- The delivery service would pick up the prescription from the customer, take it to the chemist, and then deliver the medication back to the customer.
 - My service would partner up with small to middle sized chemists who would otherwise be unable to provide the delivery service.
 - Customers would be able to pick their chemist of choice, and choose their medication to be delivered.
 
