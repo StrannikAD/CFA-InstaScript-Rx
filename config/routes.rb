@@ -3,8 +3,10 @@ Rails.application.routes.draw do
   ActiveAdmin.routes(self)
   root 'pages#index'
   get 'shop' => 'pages#shop'
+  get 'about' => 'pages#about'
   
   resources :carts
   resources :product_items
   resources :orders
+  resources :contacts, only: [:new, :create]
 end

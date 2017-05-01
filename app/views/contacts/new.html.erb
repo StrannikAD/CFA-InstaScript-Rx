@@ -1,0 +1,48 @@
+<header class="secondary">
+  <div class="background-image-holder parallax-background overlay">
+    <%= image_tag('bg-5.jpg', class: 'background-image',  alt: 'Background') %>
+  </div>
+
+  <div class="container align-vertical hero">
+    <div class="row">
+      <div class="col-md-5 text-left">
+        <h1>Contact us</h1>
+        <p>If you are unable find the answer you are looking for on our website, InstaScript has a dedicated team of Customer Care representatives to help.
+        <br>
+        <br>
+        For further assistance, fill in the form on this page to have your question answered. Alternatively, you can call our enquiry number to speak to a member of our Customer Care team directly.</p>
+      </div>
+    </div><!--end of row-->
+  </div><!--end of container-->
+</header>
+
+<div class="map section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="map-wrapper">
+          <div id="map" data-lat="-37.741312" data-long="175.261958"></div>
+          <a href="#" class="directions"><i class="fa fa-location-arrow"></i></a>
+        </div>
+      </div>
+    </div><!-- /.row -->
+  </div><!-- /.container -->
+</div>
+
+<section class="contact-info no-padding-top">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <h3>Say Hello!</h3>
+        <p><strong>Phone:</strong> +61 4 30 242 237<br>
+        <strong>Email:</strong> office@InstaScript.com  <br>
+        <strong>Address:</strong> 48 Pirrama Rd, Pyrmont NSW 2009</p>
+      </div>
+      <div class="col-md-8">
+        <%= render 'form' %>
+      </div>
+    </div><!-- /.row -->
+  </div><!-- /.container -->
+</section>
+
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
