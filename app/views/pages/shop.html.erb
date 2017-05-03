@@ -15,45 +15,50 @@
 
 <section class="product-list">
   <div class="container">
-    <% @products.each do |product| %>
-    <div class="row">
-      <div class="col-md-12">
-        <div class="product">
-          <div class="row">
-            <div class="col-md-6 col-xs-12">
-              <div class="thumbnail">
-                <%= image_tag product.image %>
-              </div>
-            </div>
-            <div class="col-md-5 col-md-offset-1">
-              <div class="product-details">
-                <h2 class="product-title">
-                  <%= product.title %>
-                </h2>
-                <p class="product-price">
-                  <%= number_to_currency product.price %>
-                </p>
-                <p>
-                  <%= product.description %>
-                </p>
-                <%= button_to product_items_path(product_id: product), class: 'btn btn-default' do %>
-                <i class="fa fa-shopping-cart"></i> Add to cart
-                <% end %>
+    <% cache ['Store', Product.latest] do %>
+      <% @products.each do |product| %>
+        <% cache ['entry', product] do %>
+        <div class="entry row">
+          <div class="col-md-12">
+            <div class="product">
+              <div class="row">
+                <div class="col-md-6 col-xs-12">
+                  <div class="thumbnail">
+                    <%= image_tag product.image %>
+                  </div>
+                </div>
+                <div class="col-md-5 col-md-offset-1">
+                  <div class="product-details">
+                    <h2 class="product-title">
+                      <%= product.title %>
+                    </h2>
+                    <p class="product-price">
+                      <%= number_to_currency product.price %>
+                    </p>
+                    <p>
+                      <%= product.description %>
+                    </p>
+                    <%= button_to product_items_path(product_id: product), class: 'btn btn-default' do %>
+                      <i class="fa fa-shopping-cart"></i> Add to cart
+                    <% end %>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </div><!-- /.row -->
+        </div><!-- /.row -->
+        <% end %>
+      <% end %>
     <% end %>
   </div>
 </section>
+
 
 <div class="no-padding-top section">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-        <a href="#" class="load-more"><i class="fa fa-ellipsis-h"></i></a>
+        <a href="catalog.html#" class="load-more"><i class="fa fa-ellipsis-h"></i></a>
       </div>
     </div><!-- /.row -->
   </div><!-- /.container -->
