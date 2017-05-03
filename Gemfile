@@ -17,7 +17,7 @@ gem 'puma', '~> 3.0'
 gem 'sass-rails', '~> 5.0'
 gem 'bootstrap-sass'
 gem "font-awesome-rails"
-gem "paperclip", "~> 5.0.0"
+gem "paperclip",
 gem 'activeadmin', github: 'activeadmin'
 gem 'devise'
 gem 'toastr-rails'
