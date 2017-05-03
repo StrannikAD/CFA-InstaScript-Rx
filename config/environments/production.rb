@@ -90,7 +90,7 @@ config.public_file_server.enabled = ENV['RAILS_SERVE_STATIC_FILES'].present?
   config.action_mailer.delivery_method = :test
   
   # Devise config
-  config.action_mailer.default_url_options = { host: 'https://instascriptrx.herokuapp.com/', port: 3000 }
+  config.action_mailer.default_url_options = { host: 'https://instascriptrx.herokuapp.com', port: 3000 }
 
   Braintree::Configuration.environment = :sandbox
   Braintree::Configuration.merchant_id = ENV['merchant_id']
