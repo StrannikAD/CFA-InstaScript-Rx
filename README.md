@@ -1,6 +1,6 @@
 # Overview
 
-- Project brief
+- Project Brief
 - Technology sStack
 - Business Problem
 - Solution
@@ -44,6 +44,10 @@ I chose to pitch to Barack Obama as my aim was to tackle the issue of healthcare
 - Customers would be able to pick their chemist of choice, and choose their medication to be delivered.
 
 ## Design Process
+
+### ERD
+ 
+![ERD](http://res.cloudinary.com/strannikad/image/upload/v1494288741/ERD_r72jqi.png)
 
 ## Installation
 
