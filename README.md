@@ -1,7 +1,7 @@
 # Overview
 
 - Project Brief
-- Technology sStack
+- Technology Stack
 - Business Problem
 - Solution
 - Design Process
