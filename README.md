@@ -1,12 +1,12 @@
 # Overview
 
-- Project Brief
-- Technology Stack
-- Business Problem
-- Solution
-- Design Process
-- Installation
-- Outstanding issues
+- [Project Brief](https://github.com/StrannikAD/CFA-InstaScript-Rx#project-brief)
+- [Technology Stack](https://github.com/StrannikAD/CFA-InstaScript-Rx#technology-stack)
+- [Business Problem](https://github.com/StrannikAD/CFA-InstaScript-Rx#business-problem)
+- [Solution](https://github.com/StrannikAD/CFA-InstaScript-Rx#solution)
+- [Design Process](https://github.com/StrannikAD/CFA-InstaScript-Rx#design-process)
+- [Installation](https://github.com/StrannikAD/CFA-InstaScript-Rx#installation)
+- [Outstanding issues](https://github.com/StrannikAD/CFA-InstaScript-Rx#outstanding-items)
 
 
 ## Project Brief
@@ -45,6 +45,16 @@ I chose to pitch to Barack Obama as my aim was to tackle the issue of healthcare
 
 ## Design Process
 
+- I was inspired by the below ecommerce website theme, as I liked its clean and modern design. I decided to challenge myself by trying to replicate the design myself (instead of buying the theme). 
+
+![Theme](http://res.cloudinary.com/strannikad/image/upload/v1494830798/Screenshot_from_2017-05-15_16-45-39_xkzyx0.png)
+
+### Wireframing
+
+![Wireframe_1](http://res.cloudinary.com/strannikad/image/upload/v1494830508/Screenshot_from_2017-05-15_16-41-14_ze0qzx.png)
+
+![Wireframe_2](http://res.cloudinary.com/strannikad/image/upload/c_scale,w_356/v1494830330/20170515_161857_sgivqn.jpg)
+
 ### ERD
  
 ![ERD](http://res.cloudinary.com/strannikad/image/upload/v1494288741/ERD_r72jqi.png)
@@ -59,6 +69,11 @@ change into the project directory, and install the dependencies:
 
 > bundle install
 
+create and migrate the database:
+
+> rails db:create
+> rails db:migrate
+
 Run the app:
 
 > rails s
@@ -66,3 +81,7 @@ Run the app:
 and access it through your browser:
 
 > http://localhost:3000
+
+## Oustanding Issues
+
+- Still need to integrate the Uber Delivieries API to simulate the delivery experience for consumers.
